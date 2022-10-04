@@ -1,0 +1,144 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Untitled Document</title>
+	 <link rel="stylesheet" href="008.css">
+</head>
+<div id="header">
+		<div class="left">
+			<a>Tin tức </a> | <a>Kênh người bán</a> | <a>Hàng giảm giá 50% </a>
+		</div>	
+		<div class="right">
+		    <a>Tài khoản </a>  <a>Giỏ hàng</a>
+		</div>
+	</div>
+	<div class="top">
+	 <div class="phone" style="margin:0 auto auto 10%;">
+		<p>Hotline: 093.934.8888</p>
+       	<p>Tổng đài: 1900 232322</p>
+		</div>
+	 <div class="logo" style="margin:0 auto auto 5%;">
+		<p style="left: 9px;font-family: 'Open Sans', sans-serif;">BearBrick Shop</p>
+		</div>
+	 <div class="search" style="margin:30px 5% auto 5%;" >
+		<input type="text">
+                        <button type="submit">Search</button>
+		</div>
+	</div>
+	
+	<div class="scrollmenu" style="text-align: center">
+  <a href="#" style="color:#FFFFFF;">Thương hiệu</a>
+  <a href="#">Home</a>
+  <a href="#">New arrived</a>
+  <a href="#">Hot products</a>
+  <a href="#">Product list</a>
+  <a href="#">Beartee</a>
+  <a href="#">Archive</a>
+  <a href="#">Online shop</a>
+  <a href="#">Blog</a>
+  <a href="#">Community</a>
+  <a href="#">Pre-orders</a>
+</div>
+	<hr />
+	
+	<div class="chitiet">
+		<div class="img">
+		      <div class="container" >
+		 <div class="aouni">
+        <img src="anh/2.jpg" style="width:100%">
+      </div>
+      <div class="aouni">
+        <img src="anh/2.2.jpg" style="width:100%">
+      </div>
+    
+      <div class="aouni">
+        <img src="anh/2.3.jpg" style="width:100%">
+      </div>
+    
+        
+      
+        
+      <a class="prev" onclick="plusSlides(-1)">❮</a>
+      <a class="next" onclick="plusSlides(1)">❯</a>
+    
+    
+    
+      <div class="row" style="">
+        <div class="column">
+          <img  src="anh/2.jpg" style="width:100%" onclick="currentSlide(1)" >
+        </div>
+        <div class="column">
+          <img  src="anh/2.2.jpg" style="width:100%" onclick="currentSlide(2)" >
+        </div>
+        <div class="column">
+          <img  src="anh/2.3.jpg" style="width:100%" onclick="currentSlide(3)" >
+        </div>
+          
+      </div>
+         
+    </div>
+    
+    <script>
+    let slideIndex = 1;
+    showSlides(slideIndex);
+    
+    function plusSlides(n) {
+      showSlides(slideIndex += n);
+    }
+    
+    function currentSlide(n) {
+      showSlides(slideIndex = n);
+    }
+    
+    function showSlides(n) {
+      let i;
+      let slides = document.getElementsByClassName("aouni");
+      let dots = document.getElementsByClassName("demo");
+      let captionText = document.getElementById("caption");
+      if (n > slides.length) {slideIndex = 1}
+      if (n < 1) {slideIndex = slides.length}
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+      }
+      for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+      }
+      slides[slideIndex-1].style.display = "block";
+      dots[slideIndex-1].className += " active";
+      captionText.innerHTML = dots[slideIndex-1].alt;
+    }
+    </script>
+		
+				<div class="info-sanpham" style="left:10px;margin-left: 666px;">
+				<h2 style="color: #959595">Breabrick</h2>
+				<h1> Đồ Chơi Mô Hình Bearbrick Katsushika Hokusai (Kanagawa Okinami Ura) Phối Màu Size 100% + 400%</h1>
+					<h2>68.900.000 ₫</h2>
+					<p style="font:36px;">Giới tính:Unisex</p>
+					<p>Mã SP: h051055</p>
+					<p>Màu sắc:phối màu </p>
+					<p>Chất liệu:Nhựa cao cấp</p>
+					<p>Gọi đặt mua:093.934.8888(7:30 - 22:00)</p>
+					<p>Ưu đãi:Freeship Hà Nội & HCM</p>
+					<h3 >SIZE:</h3>
+                  <select style="border:1px solid#dbdbdb ;color:#595959;height:34px;padding: 6px 27px 6px 8px;" >
+                    <option value="">100%+400%</option>
+                    <option value="">400%</option>
+                    <option value="">1000%</option>
+                  </select>
+					<div style="display: flex; margin-top: 50px;">
+					<div class="btn" >
+                        <a href="#"><div class="btns">Thêm vào giỏ hàng</div></a>
+                      </div>
+					<div class="btn" >
+                        <a href="#"><div class="btns">Đặt hàng ngay</div></a>
+                      </div>
+						</div>
+			
+			
+			</div>
+		</div>
+	</div>
+<body>
+</body>
+</html>

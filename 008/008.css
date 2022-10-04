@@ -1,0 +1,254 @@
+@charset "utf-8";
+/* CSS Document */
+ /* <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>*/
+#header{
+	height:38px;
+	margin:0 auto;
+	background: #000000;
+	color: #FFFFFF;
+}
+.left{
+	width:560;
+	float:left;
+	padding: 10px 0 0 10%;
+}
+.right{
+	width:400;
+	float:right;
+	padding: 10px 10% 0 0;
+	
+}
+.top{
+ display: flex;
+	height:50px;
+	
+}
+.top .search{
+	float:right;
+}
+/*menu*/
+div.scrollmenu {
+  color:#FFFFFF;
+  margin-top: 50px;
+  font-family: 'Oswald', sans-serif;
+  
+}
+
+div.scrollmenu a {
+  display: inline-block;
+  color: #000000;
+  text-align: center;
+  padding: 15px;
+  text-decoration: none;
+	transition: color 0,5s,background 0,5s;
+}
+
+div.scrollmenu a:hover {
+  text-decoration:underline;
+}
+.main{
+	display: flex;
+}
+.sud{
+
+background-color:#FFFFFF;
+  padding: 0px;
+}
+.wrapper{
+	max-width: 80%;
+	margin:0 auto;
+}
+.product ul{
+	display: flex;
+}
+.product-item{
+	color: #080808;
+	font-size: 18px;
+}
+.product-info a {
+	color: #000000;
+	text-decoration: none;
+}
+.product-info:hover a{
+	text-decoration:underline;
+}
+/*start*/
+div.stars {
+  width: 270px;
+  display: inline-block;
+}
+ 
+input.star { display: none; }
+ 
+label.star {
+  float: left;
+  padding: 9px;
+  font-size: 15px;
+  color: #444;
+  transition: all .2s;
+}
+ 
+input.star:checked ~ label.star:before {
+  content: '\f005';
+  color: #FD4;
+  transition: all .25s;
+}
+ 
+input.star-1:checked ~ label.star:before {
+  color: #FE7;
+  text-shadow: 0 0 20px #952;
+}
+ 
+input.star-5:checked ~ label.star:before { color: #F62; }
+/**/
+input.star-11:checked ~ label.star:before {
+  color: #FE7;
+  text-shadow: 0 0 20px #952;
+}
+ 
+input.star-15:checked ~ label.star:before { color: #F62; }
+
+/**/
+input.star-16:checked ~ label.star:before {
+  color: #FE7;
+  text-shadow: 0 0 20px #952;
+}
+ 
+input.star-20:checked ~ label.star:before { color: #F62; }
+ 
+label.star:hover { transform: rotate(-15deg) scale(2.0); }
+ 
+label.star:before {
+  content: '\f006';
+
+}
+div.stars {
+  width: 270px;
+  display: inline-block;
+	padding-left:35px;
+}
+ 
+input.star { display: none; }
+ 
+label.star {
+  float: left;
+  padding: 9px;
+  font-size: 15px;
+  color: #444;
+  transition: all .2s;
+}
+ 
+input.star:checked ~ label.star:before {
+  content: '\f005';
+  color: #FD4;
+  transition: all .25s;
+}
+ 
+input.star-6:checked ~ label.star:before {
+  color: #FE7;
+  text-shadow: 0 0 20px #952;
+}
+ 
+input.star-10:checked ~ label.star:before { color: #F62; }
+ 
+label.star:hover { transform: rotate(-15deg) scale(1.3); }
+ 
+label.star:before {
+  content: '\f006';
+  font-family: FontAwesome;
+}
+.container img {
+   vertical-align: middle;
+   border-radius:10px;
+   padding:20px;
+ }
+ 
+ /* Position the image container (needed to position the left and right arrows) */
+ .container {
+   position: relative;
+   width: 500px;
+   float:left;
+border-radius: 10px;
+   
+   
+ }
+ 
+ /* Hide the images by default */
+ .mySlides {
+   display: none;
+ }
+ 
+ /* Add a pointer when hovering over the thumbnail images */
+ .row:after {
+content: "";
+display: table;
+clear: both;
+}
+ 
+ /* Next & previous buttons */
+ .prev,
+ .next {
+
+   position: absolute;
+   top: 40%;
+   width: auto;
+   padding: 16px;
+   margin-top: -50px;
+   color: white;
+   font-weight: bold;
+   font-size: 20px;
+   border-radius: 0 3px 3px 0;
+   user-select: none;
+   -webkit-user-select: none;
+ }
+ 
+ /* Position the "next button" to the right */
+ .next {
+   right: 0;
+   border-radius: 3px 0 0 3px;
+ }
+ 
+ /* On hover, add a black background color with a little bit see-through */
+ .prev:hover,
+ .next:hover {
+   background-color: rgba(0, 0, 0, 0.8);
+ }
+ 
+ .row {
+     box-sizing: border-box;
+
+ }
+ .row:after {
+   content: "";
+   display: table;
+   clear: both;
+ }
+ 
+ /* Six columns side by side */
+ .column {
+   float: left;
+   width: 20%;
+   
+ }
+
+ .column img {
+  height: 150px;
+ }
+.btn{
+	;
+	top:100px;
+	display: block;
+    width: 160px;
+    height: 40px;
+    background-color:#FFFFFF;
+    text-align: center;
+    line-height: 30px;
+    margin-left: 30px;
+    color: black;
+    font-size: larger;
+    /* text-decoration: none; */
+    border: 2px solid #000000;
+}
+
+
